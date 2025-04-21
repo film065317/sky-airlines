@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Airlines Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="C:\Users\HP\Desktop/S__1810460.jpg" alt="Sky Airlines Logo" class="logo">
+      <h1>Sky Airlines</h1>
+      <p>Your Sky Your Way</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-form">
+      <h2>จองตั๋วเครื่องบิน</h2>
+      <form id="flightBookingForm">
+        <label for="from">ต้นทาง:</label>
+        <input type="text" id="from" name="from" required>
+
+        <label for="to">ปลายทาง:</label>
+        <input type="text" id="to" name="to" required>
+
+        <label for="date">วันที่เดินทาง:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="passengers">จำนวนผู้โดยสาร:</label>
+        <input type="number" id="passengers" name="passengers" min="1" value="1" required>
+
+        <label for="class">ชั้นโดยสาร:</label>
+        <select id="class" name="class">
+          <option value="eco">Economy</option>
+          <option value="premium">Premium Economy</option>
+          <option value="business">Business Class</option>
+        </select>
+
+        <button type="submit">ค้นหาเที่ยวบิน</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
